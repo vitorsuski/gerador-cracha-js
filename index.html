@@ -13,10 +13,18 @@
 <body>
 
     <script>
-let nome = prompt("Qual é o seu nome?");
-let sobrenome = prompt("Qual seu sobrenome?")
-let nascimento = prompt("Qual seu ano de nascimento")
-let ehAlunoAtivo = confirm("É aluno ativo da instituição?");
+let Nome = prompt("Qual é o seu nome?");
+let Sobrenome = prompt("Qual seu sobrenome?");
+// o prompt vai ser entendido como numero
+let Nascimento = number(prompt("Qual seu ano de nascimento"));
+let Atividade_Aluno = confirm("É aluno ativo da instituicao?");
+let Idade_Estimada = 2026 - Nascimento;
+let Sobrenome_Maiusculo = Sobrenome.toUpperCase()
+let Caracteres = Nome.lenght;
+console.log("Cracha virtual: "+ Sobrenome_Maiusculo+", "+Nome)
+console.log("Idade estimada: "+Idade_Estimada+" anos.")
+console.log("O seu primeiro nome tem: "+Nascimento)
+console.log("O estatutodo do aluno ativo: "+Atividade_Aluno)
      </script>
 
 </body>
